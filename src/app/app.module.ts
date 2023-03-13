@@ -7,6 +7,9 @@ import { SubjectComponent } from './components/subject/subject.component';
 import { Component1Component } from './components/component1/component1.component';
 import { Component2Component } from './components/component2/component2.component';
 import { Component3Component } from './components/component3/component3.component';
+import { Behave1Component } from './components/behave1/behave1.component';
+import { Behave2Component } from './components/behave2/behave2.component';
+import { Behave3Component } from './components/behave3/behave3.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { Component3Component } from './components/component3/component3.componen
     SubjectComponent,
     Component1Component,
     Component2Component,
-    Component3Component
+    Component3Component,
+    Behave1Component,
+    Behave2Component,
+    Behave3Component
   ],
   imports: [
     BrowserModule,
