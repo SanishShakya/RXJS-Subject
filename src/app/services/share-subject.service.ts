@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, ReplaySubject, Subject } from 'rxjs';
+import { AsyncSubject, BehaviorSubject, ReplaySubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -10,6 +10,8 @@ export class ShareSubjectService {
   calories = new BehaviorSubject<number>(0);
 
   videoEmit = new ReplaySubject<string>(3, 5000);
+
+  asyncVideoEmit = new AsyncSubject();
 
   constructor() {}
 }

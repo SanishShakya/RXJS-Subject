@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AsyncSubjectComponent } from './components/async-subject/async-subject.component';
 import { BehaviorSubjectComponent } from './components/behaviorSubject/behaviorSubject.component';
 import { HomeComponent } from './components/home/home.component';
 import { ReplaySubjectComponent } from './components/replay-subject/replay-subject.component';
@@ -10,6 +11,7 @@ const routes: Routes = [
   { path: 'subject', component: SubjectComponent },
   { path: 'behaviorSubject', component: BehaviorSubjectComponent },
   { path: 'replaySubject', component: ReplaySubjectComponent },
+  { path: 'asyncSubject', component: AsyncSubjectComponent },
   { path: '**', component: HomeComponent }
 ];
 

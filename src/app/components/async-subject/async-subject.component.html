@@ -1,0 +1,44 @@
+<div class="title p-4 mb-3">RXJS Async Subject</div>
+<div style="padding-left: 40px; padding-right: 40px;">
+  <div class="row">
+    <div class="col-6">
+      <div style="font-weight: bold; font-size: 20px;">
+        Add Video
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-4" style="text-align: center;">
+      <input type="text" placeholder="Enter Video Name" class="form-control" #video>
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-success" (click)="onVideoAdd(video)">Add Video</button>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-md-4">
+      <div>
+        User I
+      </div>
+      <hr />
+      <ul style="margin: 0; padding: 0;">
+        <li style="width: 100%; background: #d3e8e7; padding: 10px; border-radius: 5px; margin-bottom: 5px;">
+          {{asyncVideoEmit}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <div>
+        Click to Complete
+      </div>
+      <hr />
+      <button class="btn btn-success mt-2" (click)="onComplete()">
+        Complete  Subscription
+      </button>
+    </div>
+  </div>
+</div>

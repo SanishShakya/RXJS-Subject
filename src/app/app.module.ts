@@ -13,6 +13,7 @@ import { Behave3Component } from './components/behave3/behave3.component';
 import { BehaviorSubjectComponent } from './components/behaviorSubject/behaviorSubject.component';
 import { HomeComponent } from './components/home/home.component';
 import { ReplaySubjectComponent } from './components/replay-subject/replay-subject.component';
+import { AsyncSubjectComponent } from './components/async-subject/async-subject.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ReplaySubjectComponent } from './components/replay-subject/replay-subje
     Behave3Component,
     BehaviorSubjectComponent,
     HomeComponent,
-    ReplaySubjectComponent
+    ReplaySubjectComponent,
+    AsyncSubjectComponent
   ],
   imports: [
     BrowserModule,
