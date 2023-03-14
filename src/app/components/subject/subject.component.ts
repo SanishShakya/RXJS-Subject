@@ -8,14 +8,10 @@ import { ShareSubjectService } from 'src/app/services/share-subject.service';
 })
 export class SubjectComponent implements OnInit {
   public username = 'Username';
-  public calories: any;
 
   constructor(private shareSubject: ShareSubjectService) {
     this.shareSubject.username.subscribe((res) => {
       this.username = res;
-    });
-    this.shareSubject.calories.subscribe((res) => {
-      this.calories = res;
     });
   }
 

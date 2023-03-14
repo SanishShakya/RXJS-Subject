@@ -7,7 +7,7 @@ import { ShareSubjectService } from '../../services/share-subject.service';
   styleUrls: ['./component1.component.scss']
 })
 export class Component1Component {
-  public username='Username';
+  public username='Username1';
 
   constructor(
     private shareSubject: ShareSubjectService
